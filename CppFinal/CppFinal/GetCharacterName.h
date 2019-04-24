@@ -1,4 +1,6 @@
 #pragma once
 #include <iostream>
+#include <string>
+
 //Declaring function
-void Decision(unsigned int index);
+std::string GetCharacterName();

@@ -115,13 +115,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ContinueStory.cpp" />
     <ClCompile Include="Decision.cpp" />
+    <ClCompile Include="GetCharacterName.cpp" />
     <ClCompile Include="Main.cpp" />
-    <ClCompile Include="Story.cpp" />
+    <ClCompile Include="StartStory.cpp" />
+    <ClCompile Include="Welcome.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ContinueStory.h" />
     <ClInclude Include="Decision.h" />
-    <ClInclude Include="Story.h" />
+    <ClInclude Include="GetCharacterName.h" />
+    <ClInclude Include="StartStory.h" />
+    <ClInclude Include="Welcome.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

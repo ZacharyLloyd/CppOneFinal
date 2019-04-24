@@ -1,4 +1,4 @@
 #pragma once
 #include <iostream>
 //Declaring function
-void Decision(unsigned int index);
+void ContinueStory(unsigned int index);
