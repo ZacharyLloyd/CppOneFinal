@@ -18,36 +18,18 @@
     <ClCompile Include="Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Decision.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ContinueStory.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="GetCharacterName.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="StartStory.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Welcome.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Story.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Decision.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ContinueStory.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="GetCharacterName.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="StartStory.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Welcome.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Story.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

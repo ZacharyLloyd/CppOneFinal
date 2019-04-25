@@ -3,4 +3,18 @@
 #include <string>
 using namespace std;
 //Here we use the characterName and declare Welcome
-void Welcome(string characterName);
+
+class Welcome
+{
+public:
+	Welcome(string characterName);
+	static string GetCharacterName();
+	~Welcome();
+
+private:
+
+
+};
+
+
+
