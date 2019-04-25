@@ -13,7 +13,7 @@ Story::Story()
 }
 
 //Declaring the answer for the decisons as an int
-int answer;
+//int answer;
 //Function to allow the decisions to be made
 void Story::Decision(unsigned int index)
 {

@@ -16,7 +16,7 @@ string Welcome::GetCharacterName()
 
 	//Variable to collect user input for character name
 	string CharacterName;
-	string refCharacterName = CharacterName;//Reference
+	string &refCharacterName = CharacterName;//Reference
 
 	getline(cin, CharacterName);
 

@@ -6,22 +6,22 @@
 using namespace std;
 
 string CharacterName; //Needed to add this for characterName to grab the returned value
-string characterName = CharacterName; //This transfers the return of ChartacterName to the parameter used characterName
+string characterName = CharacterName; //This transfers the return of ChartacterName to the parameter used characterName	
+//string *characterNamePointer = &characterName;
 int main()
 {
+
+
+
 	//Call GetCharacterName function
 	string characterName = Welcome::GetCharacterName();
 	
-
-	Welcome Welcome(characterName);
-
 	//Need to catch the character name coming back from this function
 	//Do this with the characterName variable
-
 	//Here we use the characterName and start welcome function in main
-	//Welcome::Welcome(characterName);
+	Welcome Welcome(characterName);
 
-	//Starting the story in main
+	//Starting the story in main by making it an object
 	Story story;
 
 	//Starting the decisions in main
