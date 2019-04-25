@@ -5,33 +5,37 @@
 #include "Story.h"
 using namespace std;
 
-string CharacterName; //Needed to add this for characterName to grab the returned value
-string characterName = CharacterName; //This transfers the return of ChartacterName to the parameter used characterName	
-//string *characterNamePointer = &characterName;
+static string CharacterName; //Needed to add this for characterName to grab the returned value
+static string characterName = CharacterName; //This transfers the return of ChartacterName to the parameter used characterName	
+bool programRunning = true;
 int main()
 {
-
-
-
-	//Call GetCharacterName function
-	string characterName = Welcome::GetCharacterName();
+	do 
+	{
+		//Calling the welcome function while also making it an object
+		Welcome welcome;
+		//Call GetCharacterName function
 	
-	//Need to catch the character name coming back from this function
-	//Do this with the characterName variable
-	//Here we use the characterName and start welcome function in main
-	Welcome Welcome(characterName);
+		string characterName = welcome.GetCharacterName();
 
-	//Starting the story in main by making it an object
-	Story story;
+		//Need to catch the character name coming back from this function
+		//Do this with the characterName variable
+		//Here we use the characterName and start welcome function in main
+		welcome.WelcomeToTheGame(characterName);
+	
+		//Calling the story function while also making it an object
+		Story story;
 
-	//Starting the decisions in main
-	story.Decision(1);
+		//Starting the decisions in main
+		story.Decision(1);
 	 
 
-	//Putting continue story into the main function
-	story.ContinueStory(1);
+		//Putting continue story into the main function
+		story.ContinueStory(1);
 
-	system("pause");
+		system("pause");
+		programRunning = false;
+		return 0;
 
-	return 0;
+	} while (programRunning == true);
 }

@@ -1,15 +1,18 @@
 #pragma once
 #include <iostream>
 #include <string>
+//Created header files
+#include "Welcome.h"
+#include "Story.h"
 using namespace std;
-//Here we use the characterName and declare Welcome
-
+//Declaring the class Welcome
 class Welcome
 {
 public:
-	Welcome(string characterName);
+	Welcome();
 	static string GetCharacterName();
-	~Welcome();
+	void WelcomeToTheGame(string characterName);
+	void *characterNamePointer = &GetCharacterName;
 
 private:
 

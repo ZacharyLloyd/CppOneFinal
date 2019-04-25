@@ -1,11 +1,16 @@
 #include <iostream>
+#include <string>
+//Created header files
+#include "Welcome.h"
 #include "Story.h"
 using namespace std;
-
 //Function to start the story for the program
 Story::Story()
 {
-	cout << "You wake up and see you are in a holding cell at a police station.\n";
+	/*string characterName;
+	characterName = Welcome::GetCharacterName;
+	string *characterNamePointer = &characterName;*/
+	cout /*<< *characterNamePointer*/ << "You wake up and see you are in a holding cell at a police station.\n";
 	cout << "However, there is blood all over the place and unusual sounds coming from the front of the station." << endl;
 	cout << "You notice an unconcious officer laying right outside of your cell." << endl;
 	cout << "Also, you see that the unconcious officer has the keys to your cell, a gun, and a knife on him." << endl;
