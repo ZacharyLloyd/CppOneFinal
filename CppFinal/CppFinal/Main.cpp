@@ -7,30 +7,29 @@ using namespace std;
 
 static string CharacterName; //Needed to add this for characterName to grab the returned value
 static string characterName = CharacterName; //This transfers the return of ChartacterName to the parameter used characterName	
-bool programRunning = true;
+bool programRunning = true; //Bool to see if the program is running which will be used for the do while loop
+
 int main()
 {
 	do 
 	{
-		//Calling the welcome function while also making it an object
+		//Calling the welcome class and turning it into an object
 		Welcome welcome;
-		//Call GetCharacterName function
-	
+		//Call WelcomeToTheProgram function
+		welcome.WelcomeToTheProgram();
+		//Setting characterName string to the return of GetCharacterName
+		//Calling the GetCharacterName function
 		string characterName = welcome.GetCharacterName();
-
-		//Need to catch the character name coming back from this function
-		//Do this with the characterName variable
-		//Here we use the characterName and start welcome function in main
+		//Calling WelcomeToTheGame function which takes the parameter characterName to address the user by name
 		welcome.WelcomeToTheGame(characterName);
 	
-		//Calling the story function while also making it an object
+		//Calling the story class and turning it to an object
 		Story story;
-
-		//Starting the decisions in main
+		//Calling the StartStory function
+		story.StartStory();
+		//Calling the Decision function
 		story.Decision(1);
-	 
-
-		//Putting continue story into the main function
+		//Calling the ContinueStory function
 		story.ContinueStory(1);
 
 		system("pause");
