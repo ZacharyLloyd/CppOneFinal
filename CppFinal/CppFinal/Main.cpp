@@ -3,7 +3,6 @@
 //Created header files
 #include "Welcome.h"
 #include "Story.h"
-using namespace std;
 
 static string CharacterName; //Needed to add this for characterName to grab the returned value
 static string characterName = CharacterName; //This transfers the return of ChartacterName to the parameter used characterName	
@@ -26,11 +25,11 @@ int main()
 		//Calling the story class and turning it to an object
 		Story story;
 		//Calling the StartStory function
-		story.StartStory();
+		story.StartStory(characterName);
 		//Calling the Decision function
-		story.Decision(1);
+		story.Decision(1, characterName);
 		//Calling the ContinueStory function
-		story.ContinueStory(1);
+		story.ContinueStory(1, characterName);
 
 		system("pause");
 		programRunning = false;

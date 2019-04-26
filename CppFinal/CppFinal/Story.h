@@ -10,9 +10,9 @@ class Story : public Welcome
 {
 public:
 	Story();
-	void StartStory();
-	void Decision(unsigned int index);
-	void ContinueStory(unsigned int index);
+	void StartStory(string characterName);
+	void Decision(unsigned int index, string characterName);
+	void ContinueStory(unsigned int index, string characterName);
 	
 
 private:

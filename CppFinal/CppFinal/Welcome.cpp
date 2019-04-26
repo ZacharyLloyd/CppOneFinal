@@ -7,6 +7,8 @@
 using namespace std;
 Welcome::Welcome() 
 {
+	Welcome::CharacterName;
+	Welcome::CharacterNamePointer;
 }
 void Welcome::WelcomeToTheProgram() 
 {
@@ -24,7 +26,7 @@ string Welcome::GetCharacterName()
 	//Variable to collect user input for character name
 	string CharacterName = "";
 	string &refCharacterName = CharacterName;//Reference
-	string *CharacterNamePointer = &CharacterName; //Pointer
+
 
 	getline(cin, CharacterName);
 
@@ -32,7 +34,7 @@ string Welcome::GetCharacterName()
 }
 void Welcome::WelcomeToTheGame(string characterName) 
 {
-	cout << "\nWelcome " << characterName << " to Zombieland.\n";
+	cout << "\nWelcome " << characterName << ", to Zombieland.\n";
 	cout << "Be careful of the undead, or you may become one!" << endl;
 
 }
