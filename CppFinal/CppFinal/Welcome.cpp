@@ -3,13 +3,14 @@
 //Created header files
 #include "Welcome.h"
 #include "Story.h"
-
 using namespace std;
+//The welcome constructor
 Welcome::Welcome() 
 {
 	Welcome::CharacterName;
 	Welcome::CharacterNamePointer;
 }
+//The actual WelcomeToTheProgram funciton
 void Welcome::WelcomeToTheProgram() 
 {
 	cout << "Welcome to an interactive fiction story about the zombie apocalypse." << endl;
@@ -18,7 +19,7 @@ void Welcome::WelcomeToTheProgram()
 	cout << "You will be given four choices please enter the numbers 1-4." << endl;
 	cout << "After the desicion is made your story will come to an end." << endl;
 }
-//Function to get the character name
+//The actual GetCharacterName function
 string Welcome::GetCharacterName()
 {
 	cout << "Please enter your character name: ";
@@ -32,7 +33,8 @@ string Welcome::GetCharacterName()
 
 	return refCharacterName;
 }
-void Welcome::WelcomeToTheGame(string characterName) 
+//The actual WelcomeToTheGame function
+void Welcome::WelcomeToTheGame(string characterName, string *characterNamePointer) 
 {
 	cout << "\nWelcome " << characterName << ", to Zombieland.\n";
 	cout << "Be careful of the undead, or you may become one!" << endl;

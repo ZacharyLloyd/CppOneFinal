@@ -3,9 +3,9 @@
 //Created header files
 #include "Welcome.h"
 #include "Story.h"
-
 static string CharacterName; //Needed to add this for characterName to grab the returned value
-static string characterName = CharacterName; //This transfers the return of ChartacterName to the parameter used characterName	
+static string characterName = CharacterName; //This transfers the return of ChartacterName to the parameter used characterName
+string *characterNamePointer = &characterName;
 bool programRunning = true; //Bool to see if the program is running which will be used for the do while loop
 
 int main()
@@ -20,12 +20,12 @@ int main()
 		//Calling the GetCharacterName function
 		string characterName = welcome.GetCharacterName();
 		//Calling WelcomeToTheGame function which takes the parameter characterName to address the user by name
-		welcome.WelcomeToTheGame(characterName);
+		welcome.WelcomeToTheGame(characterName, characterNamePointer);
 	
 		//Calling the story class and turning it to an object
 		Story story;
 		//Calling the StartStory function
-		story.StartStory(characterName);
+		story.StartStory(characterName, characterNamePointer);
 		//Calling the Decision function
 		story.Decision(1, characterName);
 		//Calling the ContinueStory function

@@ -1,27 +1,25 @@
 #include <iostream>
 #include <string>
 //Created header files
-
 #include "Welcome.h"
 #include "Story.h"
 using namespace std;
-//Function to start the story for the program
+//Stroy constructor
 Story::Story()
 {
 	/*Welcome::CharacterName;
 	Welcome::CharacterNamePointer;*/
 }
-void Story::StartStory(string characterName)
+//The actual StartStory function
+void Story::StartStory(string charcterName, string *characterNamePointer)
 {
-	cout << characterName << " wakes up and see you are in a holding cell at a police station.\n";
+	cout << *characterNamePointer << " wakes up and see you are in a holding cell at a police station.\n";
 	cout << "However, there is blood all over the place and unusual sounds coming from the front of the station." << endl;
-	cout << characterName << " notices an unconcious officer laying right outside of your cell." << endl;
+	cout << *characterNamePointer << " notices an unconcious officer laying right outside of your cell." << endl;
 	cout << "Also, you see that the unconcious officer has the keys to your cell, a gun, and a knife on him." << endl;
 	cout << "What do you do?" << endl;
 }
-//Declaring the answer for the decisons as an int
-//int answer;
-//Function to allow the decisions to be made
+//The actual Decision function
 void Story::Decision(unsigned int index, string characterName)
 {
 	switch (index)
@@ -51,8 +49,7 @@ void Story::Decision(unsigned int index, string characterName)
 		break;
 	}
 }
-
-//Function to continue story after decsion is made
+//The actual ContinueStory function
 void Story::ContinueStory(unsigned int index, string characterName)
 {
 	switch (index)
