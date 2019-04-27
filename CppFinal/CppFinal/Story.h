@@ -15,9 +15,9 @@ public:
 	//Declariing StartStory function
 	void StartStory(string characterName, string *characterNamePointer);
 	//Declaring Decisions function
-	void Decision(unsigned int index, string characterName);
+	void Decision(unsigned int index, string characterName, string *characterNamePointer);
 	//Declaring ContinueStory function
-	void ContinueStory(unsigned int index, string characterName);
+	void ContinueStory(unsigned int index, string characterName, string *characterNamePointer);
 	
 //Methods and properties that are private to the Story class
 private:

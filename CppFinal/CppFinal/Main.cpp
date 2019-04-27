@@ -18,7 +18,7 @@ int main()
 		welcome.WelcomeToTheProgram();
 		//Setting characterName string to the return of GetCharacterName
 		//Calling the GetCharacterName function
-		string characterName = welcome.GetCharacterName();
+		*characterNamePointer = welcome.GetCharacterName();
 		//Calling WelcomeToTheGame function which takes the parameter characterName to address the user by name
 		welcome.WelcomeToTheGame(characterName, characterNamePointer);
 	
@@ -27,9 +27,9 @@ int main()
 		//Calling the StartStory function
 		story.StartStory(characterName, characterNamePointer);
 		//Calling the Decision function
-		story.Decision(1, characterName);
+		story.Decision(1, characterName, characterNamePointer);
 		//Calling the ContinueStory function
-		story.ContinueStory(1, characterName);
+		story.ContinueStory(1, characterName, characterNamePointer);
 
 		system("pause");
 		programRunning = false;

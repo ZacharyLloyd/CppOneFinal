@@ -19,8 +19,7 @@ public:
 	void WelcomeToTheGame(string characterName, string *characterNamePointer);
 	//Variable to collect user input for character name
 	string CharacterName = "";
-	string &refCharacterName = CharacterName;//Reference
-	string *CharacterNamePointer = &CharacterName; //Pointer
+	string &reCharacterName = CharacterName;//Reference
 
 	//Methods and properties that are private in the welcome class
 private:

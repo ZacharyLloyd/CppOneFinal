@@ -8,7 +8,6 @@ using namespace std;
 Welcome::Welcome() 
 {
 	Welcome::CharacterName;
-	Welcome::CharacterNamePointer;
 }
 //The actual WelcomeToTheProgram funciton
 void Welcome::WelcomeToTheProgram() 

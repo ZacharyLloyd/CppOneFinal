@@ -7,8 +7,6 @@ using namespace std;
 //Stroy constructor
 Story::Story()
 {
-	/*Welcome::CharacterName;
-	Welcome::CharacterNamePointer;*/
 }
 //The actual StartStory function
 void Story::StartStory(string charcterName, string *characterNamePointer)
@@ -20,7 +18,7 @@ void Story::StartStory(string charcterName, string *characterNamePointer)
 	cout << "What do you do?" << endl;
 }
 //The actual Decision function
-void Story::Decision(unsigned int index, string characterName)
+void Story::Decision(unsigned int index, string characterName, string *characterNamePointer)
 {
 	switch (index)
 	{
@@ -32,25 +30,25 @@ void Story::Decision(unsigned int index, string characterName)
 		cin >> answer;
 		if (answer == 1)
 		{
-			ContinueStory(1, characterName);
+			ContinueStory(1, characterName, characterNamePointer);
 		}
 		else if (answer == 2)
 		{
-			ContinueStory(2, characterName);
+			ContinueStory(2, characterName, characterNamePointer);
 		}
 		else if (answer == 3)
 		{
-			ContinueStory(3, characterName);
+			ContinueStory(3, characterName, characterNamePointer);
 		}
 		else if (answer == 4)
 		{
-			ContinueStory(4, characterName);
+			ContinueStory(4, characterName, characterNamePointer);
 		}
 		break;
 	}
 }
 //The actual ContinueStory function
-void Story::ContinueStory(unsigned int index, string characterName)
+void Story::ContinueStory(unsigned int index, string characterName, string *characterNamePointer)
 {
 	switch (index)
 	{
